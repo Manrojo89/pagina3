@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet"  href="peliculas.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="peliculas.js" defer></script>
+<title>detalles</title>
+
+<body>
+<script>
+        fetch('/Principal/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
+        });
+</script>
+
+
+<section class="seccion__secundaria">
+  <div class="seccion__contenido">
+    <div class="seccion__video__secundaria">
+      <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/VLFHY43STVH3PBSEULWXPRCSIY.jpeg" alt="Imagen izquierda">
+    </div>
+
+    <div class="seccion__secundaria__texto">
+      <h2>Lanzamiento digital</h2>
+      <h1 class="seccion__texto__2">Oppenheimer, una película de Christopher Nolan</h1>
+      <p class="seccion__header__secundaria__titulo">
+        El año pasado FIFA pasó a llamarse EA Sports FC 24, pero el cambio de nombre no traía grandes
+        modificaciones en la jugabilidad.
+      </p>
+
+      <ul class="header__info-movies">
+        <li><button class="movies__espaciado"><span class="resaltado">PG 18</span></button></li>
+        <li><button class="movies__espaciado"><span class="resaltado-2">HD</span></button></li>
+        <li><button class="movies__espaciado">ROMANCE</button></li>
+        <li><button class="movies__espaciado">DRAMA</button></li>
+        <li><i class="fa-regular fa-calendar-days calendario">&nbsp; 2024</i></li>
+        <li><i class="fa-regular fa-clock reloj">&nbsp; 169 MIN</i></li>
+      </ul>
+
+      <div class="cuadro__compartir">
+        <div class="icono-compartir">
+          <i class="fa-solid fa-share-nodes"></i>
+          <p>Compartir</p>
+        </div>
+
+        <div class="prime-video">
+          <h1>Prime Video</h1>
+          <p>Streaming channels</p>
+        </div>
+
+        <button class="btn__trailer"> &#10148; Ver ahora</button>
+      </div>
+    </div>
+
+    <div class="imagen-derecha">
+      <img src="/img-de-cine/descargar.png" alt="Imagen derecha">
+    </div>
+  </div>
+</section>
+
+<section class="capitulos__penguin capitulos__penguin-fondo">
+  <div class="capitulos__penguin-ancho">
+  <h2 class="subtitulo-1">Streaming online</h2>  
+  <div class="capitulos__penguin-titulos-1">
+  <h1 class="titulo1">Todos los episodios</h1>
+  <div class="parrafo">
+  <p >2.7 millones</p>
+  <i class="fa-solid fa-eye"></i>
+  </div>
+  </div>
+
+  <div class="capitulos__penguin-titulos-2">
+  <div class="parrafo-penguin">
+  <h3 class="subtitulo-2">Temporada 2</h3>
+  <p class="parrafo-2">5 episodios</p>
+  </div>
+  </div>
+  <div class="capitulos__penguin-episodios">
+  <div class="capitulos__penguin-espaciado">
+  <div class="capitulos__penguin-division">
+  <p class="capitulos__penguin-eleccion"> &#10148; Episodio 1 - Fuera de horas</p>
+  <i class="fa-regular fa-clock reloj eleccion-tiempo">&nbsp; 65 MIN</i>
+  </div>
+  <div class="capitulos__penguin-division">
+  <p class="capitulos__penguin-eleccion"> &#10148; Episodio 2 - El hombre infiltrado</p>
+  <i class="fa-regular fa-clock reloj eleccion-tiempo">&nbsp;  65 MIN</i>
+  </div>
+  <div class="capitulos__penguin-division">
+  <p class="capitulos__penguin-eleccion"> &#10148; Episodio 3 - Dicha </p>
+  <i class="fa-regular fa-clock reloj eleccion-tiempo">&nbsp;  65 MIN</i>
+  </div>
+  <div class="capitulos__penguin-division">
+  <p class="capitulos__penguin-eleccion"> &#10148; Episodio 4 - Cent’Anni</p>
+  <i class="fa-regular fa-clock reloj eleccion-tiempo">&nbsp;  65 MIN</i>
+  </div>
+  <div class="capitulos__penguin-division">
+  <p class="capitulos__penguin-eleccion"> &#10148; Episodio 5 - Regreso a casa</p>
+  <i class="fa-regular fa-clock reloj eleccion-tiempo">&nbsp;  65 MIN</i>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="capitulos__penguin__img-derecha">
+    <img src="https://s3.cine3.com/2024/06/the-penguin-poster-latam.jpg" alt="Imagen derecha2">
+  </div>
+  </div>
+</section>
+
+</section>
+
+<section>
+    <div id="separacion-container"></div>
+    <div id="footer-container"></div>
+  
+    <script>
+      Promise.all([
+        fetch('/Principal/separacion.html').then(response => response.text()),
+        fetch('/Principal/footer.html').then(response => response.text())
+      ])
+      .then(([separacionData, footerData]) => {
+        document.getElementById('separacion-container').innerHTML = separacionData;
+        document.getElementById('footer-container').innerHTML = footerData;
+      })
+      .catch(error => console.error('Error al cargar los archivos:', error));
+    </script>
+ </section> 
+</body>

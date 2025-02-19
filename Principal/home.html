@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet"  href="../home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="../home.js" defer></script>
+<title>Manroj +</title>
+</head>
+
+
+<script>
+    fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.body.insertAdjacentHTML('afterbegin', data);
+    });
+</script>
+
+<body>
+
+<section class="fondo__primera__seccion">
+        <div class="seccion__movies-texto">
+        <p class="seccion__texto-movies">Manroj +</p>
+        <h2 class="seccion__header__movies">Películas, series, anime y muchas ilimitadas opciones, para que disfrutes. </h2>
+        <li class="header__info-movies">
+            <button class="movies__espaciado" ><span class="resaltado" >PG 18</span></button>
+            <button class="movies__espaciado" ><span class="resaltado-2">HD</span></button>
+            <button class="movies__espaciado ROMANCE" >ROMANCE,</button>
+            <button class="movies__espaciado DRAMA" >DRAMA</button>
+            <i class="fa-regular fa-calendar-days movies__espaciado calendario"> &nbsp; 2024</i>
+            <i class="fa-regular fa-clock movies__espaciado reloj">&nbsp; 169 MIN</i>
+        </li>
+        <button class="btn__trailer"> &#10148; Ver ahora</button>
+        </div>
+</section>
+
+<section class="shows__populares fondo__segunda-seccion">
+    <h2 class="shows__populares-sub">Streaming online</h2>
+    <div class="shows__populares__menu">
+        <h1 class="shows__populares-tit" id="section-title">Próximas películas</h1>
+        <div class="shows__populares-btn">
+            <button class="btn-secciones" id="btn-series">Series</button>
+            <button class="btn-secciones" id="btn-peliculas">Películas</button>
+            <button class="btn-secciones" id="btn-anime">Anime</button>
+            <button class="btn-flechas btn-secciones" id="btn-left">
+                <span class="flecha-izquierda">&lt;</span>
+                <span class="barra-vertical">|</span>
+                <span class="flecha-derecha" id="btn-right">&gt;</span>
+            </button>
+        </div>
+    </div>
+    <div class="seccion__peliculas">
+        <div class="peliculas-container" id="peliculas-container"></div>
+    </div>
+</section>
+
+<section class="seccion__secundaria seccion__fondo">
+    <div class="seccion__img__secundaria">
+        <img src="/img-de-cine/services_img.jpg" alt="Descripción de la imagen" class="imagen__1">
+        <img src="/img-de-cine/descargar.png" alt="Descripción de la imagen" class="imagen__2">
+
+    </div>   
+    <div class="seccion__secundaria__texto">
+    <p class="seccion__header__secundaria__titulo"> &#8213; Nuestros servicios</span></p>
+    <h1 class="seccion__texto__2">Descarga tus programas favoritos y míralos sin internet.</h1>
+    <div class="txt_1">
+    <p class="seccion__header__secundaria__titulo">Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are
+         many variations of passages of lorem Ipsum available, but the majority have suffered alteration in some injected humour.
+    </p>
+     </div>
+     <div class="icon-btn-container">
+        <div class="icon-btn">
+            <i class="fa-solid fa-tv"></i>
+            <div class="btn-content">
+                <h1 class="btn-titulo">Disfruta tu televisor</h1>
+                <p class="btn-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </div>
+        <div class="icon-btn">
+            <i class="fa-solid fa-video"></i>
+            <div class="btn-content">
+                <h1 class="btn-titulo">Disfruta tu televisor</h1>
+                <p class="btn-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </div>
+     </div>
+    </div>
+</section>
+
+<section class="shows__populares_2 fondo__segunda-seccion_2">
+    <h2 class="shows__populares-sub_2">Streaming online</h2>
+    <h2 class="shows__populares-tit_2" id="section-title2">Películas más populares</h1>
+    <div class="shows__populares__menu_2">
+        <div class="shows__populares-btn_2">
+            <button class="btn-secciones_2" id="btn-series-2">Series</button>
+            <button class="btn-secciones_2" id="btn-peliculas-2">Películas</button>
+            <button class="btn-secciones_2" id="btn-documentales">Documentales</button>
+            <button class="btn-secciones_2" id="btn-deportes">Mejor valoradas</button>
+        </div>
+    </div>
+    <div class="seccion__peliculas_2">
+        <div class="peliculas-container_2" id="proximas-peliculas-container"></div>
+    </div>
+</section>
+
+<section class="seccion__principal">
+    <div class="seccion__principal-texto">
+    <p class="seccion__texto-1">&#8213; Streaming online</p>
+    <h2 class="seccion__header__titulo">Películas y programas de televisión en vivo para amigos y familiares</h2>
+    <p class="seccion__texto">Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod There are many variations 
+        of passages of lorem Ipsum available, but the majority have suffered alteration.</p>
+
+    <div class="seccion__texto-btn">
+    <p class="seccion__texto- texto-4k"> HD 4K</p>
+
+    <div>
+    <p class="seccion__texto- texto-20k"> 20 K +</p>
+    </div>
+    </div>
+    <p class="seccion__texto- texto-30k"> Usuarios activos</p>
+    <button class="seccion__btn" id="btnReseñaDeadRising"> &#10148;  Ver ahora</button>
+    </div>
+    <div class="seccion__img">
+    <img src="/img-de-cine/live_img.png" alt="Descripción de la imagen">
+    </div>
+</section>
+
+<section class="shows__populares_3 fondo__segunda-seccion_3">
+    <h2 class="shows__populares-sub_3">Los mejores en transmisión</h2>
+    <h2 class="shows__populares-tit_3">Programas en emisión</h1>
+    <div class="seccion__peliculas_3">
+        <div class="peliculas-container_3" id="proximas-series-container_3"></div>
+    </div>
+</section>
+  
+<section>
+    <div id="separacion-container"></div>
+    <div id="footer-container"></div>
+  
+    <script>
+      Promise.all([
+        fetch('separacion.html').then(response => response.text()),
+        fetch('footer.html').then(response => response.text())
+      ])
+      .then(([separacionData, footerData]) => {
+        document.getElementById('separacion-container').innerHTML = separacionData;
+        document.getElementById('footer-container').innerHTML = footerData;
+      })
+      .catch(error => console.error('Error al cargar los archivos:', error));
+    </script>
+ </section> 
+</body>
+</html>

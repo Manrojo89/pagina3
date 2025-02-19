@@ -1,0 +1,987 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    overflow-x: hidden;
+}
+
+.header, .fondo__primera__seccion {
+    background-image: url(/img-de-cine/jhon\ wick\ 3.jpg);
+    font-size: 45px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.header {
+    padding: 10px 20px;
+  }
+
+.header__horizontal {
+    display: flex;
+    list-style: none;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%;
+
+}
+
+.header__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.iconos_derecha, .iconos_central, .iconos_izquierda {
+    display: flex;
+    align-items: center;
+}
+
+.iconos_derecha {
+    margin-right: 0;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.iconos_central {
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.iconos_izquierda {
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.header__items i  {
+    font-size: 18px;
+    margin-left: 10px;
+}
+.header__items :hover {
+    cursor: pointer;
+    color:#ffff00;
+}
+
+.header__items button {
+    margin-right: 10px;
+    padding: 10px 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+   
+}
+
+.header__titulo h1 {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn__espaciado {
+    margin: 16px;
+    background-color: transparent; 
+}
+
+.espaciado__iniciar:hover {
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+
+}
+
+.btn_Sesion .btn__espaciado {
+    display: flex;
+    padding: 14px 18px;
+    border: 1px solid #ffff00;
+    border-radius:24px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.fondo__primera__seccion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    height: 100vh;
+    padding: 20px;
+    padding-top: 120px;
+}
+
+.seccion__movies-texto {
+    max-width: 60%;
+    margin: 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.seccion__texto-movies{
+    color: #ffff00;
+    font-size: 28px;
+}
+
+.seccion__header__movies {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+
+.header__info-movies {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 5px;
+
+}
+
+.movies__espaciado {
+    margin: 2px;
+    padding: 2px 6px;
+    font-size: 14px;
+    border: none; 
+    background-color: transparent; 
+    font-weight: bold;
+
+}
+
+.movies__espaciado:nth-child(3), .movies__espaciado:nth-child(4) {
+    margin-right: -14px;
+}
+
+.resaltado {
+    background-color: white;
+    color: black;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 12px; 
+
+}
+
+.resaltado-2 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;;
+    padding: 4px 10px;
+    font-size: 12px; 
+    font-weight: bold;
+
+}
+
+.calendario {
+    color: inherit; 
+    
+}
+
+.reloj{
+    color: inherit; 
+}
+
+.calendario:before {
+    color: yellow;
+}
+
+.reloj:before {
+    color: yellow;
+}
+
+.ROMANCE:hover {
+    color: yellow;
+}
+
+.DRAMA:hover {
+    color: yellow;
+    
+}
+
+.btn__trailer{
+    padding: 12px 46px;
+    border: 2px solid #ffff00;
+    border-radius:24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(10, 10, 10, 0.871);
+    cursor: pointer;
+}
+
+.btn__trailer:hover {
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+.shows__populares {
+    background-image: url(/img-de-cine/negro\ oscuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo__segunda-seccion {
+    justify-content: flex-start;
+    align-items: flex-start; 
+    height: auto;
+    padding: 20px;
+}
+
+.shows__populares-sub {
+    margin-top: 70px;
+    font-size: 17px; 
+    margin-left: 60px;
+    color: yellow;
+}
+
+.shows__populares__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.shows__populares-tit {
+    margin-left: 60px;
+    font-size: 28px; 
+    font-weight: bold;
+}
+
+.shows__populares-btn {
+  display: flex;
+  gap: 10px; 
+  margin-right: 60px;
+}
+
+.btn-secciones {
+    padding: 10px 16px;
+    border: 1px solid #ffff00;
+    border-radius:24px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+.btn-secciones:hover {
+    transform: scale(1.2);
+    background-color: #ffff00;
+    color: #000000; 
+}
+
+.btn-flechas {
+    font-size: 18px;
+}
+
+.flecha-izquierda,
+.flecha-derecha {
+    padding: 6px;
+}
+
+.barra-vertical {
+    font-size: 16px; 
+    color: #fff;
+}
+
+.seccion__peliculas {
+    margin-top: 60px; 
+}
+
+.peliculas-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+}
+
+
+.pelicula {
+    flex: 0 0 auto; 
+    text-align: center;
+}
+
+.pelicula img {
+    width: 300px; 
+    height: 450px; 
+    object-fit: cover; 
+    border-radius: 4px;
+}
+
+.pelicula h3 {
+    color: #ffff00; 
+    font-size: 16px; 
+    margin-top: 20px;
+}
+
+
+.movies__proximamente {
+    margin: 4px;
+    padding: 2px 6px;
+    font-size: 14px;
+    border: none; 
+    background-color: transparent; 
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: 30px;
+
+}
+
+.seccion__fondo {
+    background-image: url(/img-de-cine/azul\ oscuro2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.seccion__secundaria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    overflow: hidden; 
+    text-align: left; 
+}
+
+.seccion__secundaria__texto, .seccion__img__secundaria {
+    flex: 1;
+    padding: 0 10px;
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+.txt_1{
+    display: flex;
+    height: auto;
+    width: 100%;
+    overflow: hidden; 
+    text-align: left; 
+    line-height: 2;
+    font-size: 34px;
+}
+
+.seccion__header__secundaria__titulo {
+    font-size: 16px;
+    margin-right: 62px;
+    margin-bottom: 6px;
+    margin-top:  30px;
+}
+
+.seccion__img__secundaria {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.imagen__1 {
+    margin-left: 58px;
+    margin-top: 60px;
+    cursor: pointer;
+
+}
+
+.imagen__2 {
+    margin-bottom: -1px;
+    margin-right: 56px;
+    cursor: pointer;
+
+}
+
+.seccion__texto__2 {
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.seccion__secundaria__btn {
+    font-size: 20px;
+    width: 30%;
+    border: none;
+    text-decoration: underline;
+    color: red;
+    text-align: left;
+}
+
+.seccion__secundaria__btn:hover{
+    cursor: pointer;
+}
+
+.icon-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: -2px
+    
+}
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    gap: 24px; 
+    width: 100%;
+}
+
+.icon-btn i {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px dashed #ffff00;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.icon-btn i:hover {
+    transform: scale(1.2);
+    background-color: #ffff00;
+    color: #000000; 
+}
+
+.btn-titulo {
+    font-size: 20px;
+    margin: 0;
+    color: white;
+    
+}
+
+.btn-texto {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+    color: white;
+    margin-right: 140px;
+}
+
+.shows__populares_2 {
+    background-image: url(/img-de-cine/negro\ oscuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo__segunda-seccion_2 {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.shows__populares-sub_2 {
+    margin-top: 80px;
+    font-size: 17px; 
+    color: yellow;
+    text-align: center;
+}
+
+
+.shows__populares-tit_2 {
+    font-size: 28px; 
+    font-weight: bold;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.shows__populares__menu_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;    
+}
+
+.shows__populares-btn_2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.btn-secciones_2 {
+    padding: 12px 18px;
+    border: 1px solid #ffff00;
+    border-radius:4px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(10, 10, 10, 0.871);
+    cursor: pointer;
+}
+
+.btn-secciones_2:hover {
+    color: #ffff00;
+    transform: scale(1.2);
+    background-color: transparent   
+}
+
+.seccion__peliculas_2 {
+    margin-top: 60px; 
+}
+
+.peliculas-container_2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-x: auto;
+    gap: 42px;
+    justify-content: center;
+}
+
+.pelicula_2 {
+    flex: 0 0 auto; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pelicula_2 img {
+    width: 300px;
+    height: 450px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.pelicula-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.pelicula_2 h3  {
+    color: #ffff00; 
+    font-size: 16px; 
+}
+
+.pelicula-year {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.seccion__principal {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+}
+
+.seccion__principal-texto, .seccion__img {
+    flex: 1;
+    padding: 0 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+}
+
+.seccion__principal-texto {
+    flex-direction: column; 
+    text-align: left;
+    color: #000000;
+    line-height: 1;
+}
+
+.seccion__img {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.seccion__img img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.seccion__texto {
+    font-size: 20px; 
+    text-align: left;  
+    color: #000000;
+    margin-left: 70px;
+    margin-top: 30px;
+    line-height: 2;
+}
+
+
+.seccion__texto-1 {
+    font-size: 20px; 
+    text-align: left;  
+    color: #000000;
+    margin-left: 70px;
+    margin-bottom: -30px;
+
+}
+
+.seccion__header__titulo {
+    font-size: 30px;
+    color: #000000;
+    margin-left: 70px;
+    margin-top: 50px;
+
+}
+
+.seccion__texto-btn {
+
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    margin-top: 6px;
+
+}
+
+.seccion__btn {
+    font-size: 24px;
+    width: 200px;
+    border-radius: 40px;
+    padding: 14px;
+    background-color: #ffff00;
+    color: #000000;
+    border: 3px solid transparent;
+    transition: background-color 0.3s, border 0.3s;
+    margin-left: 73px;
+    margin-top: -30px;
+
+}
+
+.seccion__btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid #ffff00;
+}
+
+
+.texto-4k {
+    font-size: 70px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px red;
+}
+
+.texto-20k {
+    color:#1f1e21;
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.texto-30k {
+    font-size: 20px;
+    color:#1f1e21;
+    margin-top: -76px;
+    margin-bottom: 60px;
+    margin-left: 300px;
+    font-weight: bold;
+
+}
+.shows__populares_3 {
+    background-image: url(/img-de-cine/negro\ oscuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo__segunda-seccion_3 {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.shows__populares-sub_3 {
+    margin-top: 80px;
+    font-size: 17px; 
+    color: yellow;
+    text-align: center;
+}
+
+
+.shows__populares-tit_3 {
+    font-size: 28px; 
+    font-weight: bold;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.shows__populares__menu_3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;    
+}
+
+.shows__populares-btn_3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.btn-secciones_3 {
+    padding: 12px 18px;
+    border: 1px solid #ffff00;
+    border-radius:4px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(10, 10, 10, 0.871);
+    cursor: pointer;
+}
+
+.btn-secciones_3:hover {
+    color: #ffff00;
+    transform: scale(1.2);
+    background-color: transparent   
+}
+
+.seccion__peliculas_3 {
+    margin-top: 60px; 
+}
+.peliculas-container_3 {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.pelicula-item_3 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.pelicula-item_3 img {
+    width: 300px;
+    height: 450px; 
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.pelicula-item_3 h3 {
+    text-align: center;
+    color: white;color: #ffff00;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.separacion__final {
+    background-color: #eecf07;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.separacion__fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.seccion__texto-4 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    
+}
+
+.texto-5{
+    color: #000000;
+    margin: 0; 
+    white-space: nowrap;
+    font-size: 30px;
+}
+
+.texto-6 {
+    font-size: 16px;
+    margin: 0; 
+    color: #000000;
+}
+
+.input-container {
+    position: relative;
+    width: auto; 
+}
+
+.nombre {
+    width: 600px; 
+    padding: 18px 16px;
+    padding-right: 120px; 
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+.btn-empezar {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 18px 28px;
+    background-color: #000000;
+    color: #ffff00;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-empezar:hover {
+    background-color: #ffff00;
+    color: #000000;
+}
+
+.subheader{
+    background-image: url(/img-de-cine/negro\ oscuro.jpg);
+    font-size: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20px;
+}
+
+.subheader__horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subheader__items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.subiconos__izquierda {
+    margin-right: auto;
+}
+
+.subiconos__central{
+    display: flex;
+    gap: 10px;
+    margin-right: -82px;
+    align-items: center;
+}
+
+.subBtn__espaciado  {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+}
+
+.subBtn__container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    height: 45px;
+}
+
+.input-con-icono {
+    position: relative;
+    width: 300px;
+    display: flex;
+    align-items: center; 
+  }
+
+.nombre-2 {
+    width: 100%;
+    padding: 10px 40px 10px 16px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.icono-buscador {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    color: #1d1b1b;
+    pointer-events: none;
+}
+.footer-links-icons, 
+.footer-credits-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    margin-right: 740px;
+}
+
+.footer-credits {
+    display: flex;
+    gap: 15px;
+    margin-right: 680px;
+}
+
+.footer-links span, .footer-credits span {
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 08px;
+    margin-left: auto;
+
+}
+
+.payment-icons i {
+    cursor: pointer;
+}
+
+.footer-icons i {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}

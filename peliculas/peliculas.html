@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet"  href="peliculas.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="peliculas.js" defer></script>
+<title>películas</title>
+
+<body>
+<script>
+    fetch('/Principal/header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.body.insertAdjacentHTML('afterbegin', data);
+    });
+</script>
+
+<section class="seccion__movies-1">
+
+    <div class="movies-texto">
+        <h1>Nuestras <span class="resaltado amarillo">películas</span></h1>
+        <button class="btn-movies">
+            <span class="btn-inicio amarillo" >Inicio</span>
+            <span class="barra-vertical">|</span>
+            <span class="resaltado">películas</span>
+        </button>
+      </div>      
+    
+</section>
+
+<section class="shows__populares fondo__segunda-seccion">
+    <h2 class="shows__populares-sub">Streaming online</h2>
+    <div class="shows__populares__menu">
+        <h1 class="shows__populares-tit" id="section-title-2">Próximas películas</h1>
+        <div class="shows__populares-btn">
+            <button class="btn-secciones" id="btn-anime-2">Anime</button>
+            <button class="btn-secciones" id="btn-peliculas-2">Películas</button>
+            <button class="btn-secciones" id="btn-series-2">Series</button>
+            <button class="btn-flechas btn-secciones" id="btn-left">
+                <span class="flecha-izquierda">&lt;</span>
+                <span class="barra-vertical">|</span>
+                <span class="flecha-derecha" id="btn-right-2">&gt;</span>
+            </button>
+        </div>
+    </div>
+    <div class="seccion__peliculas">
+        <div class="peliculas-container" id="peliculas-container-2"></div>
+        <div id="trailer-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <iframe id="trailer-iframe" width="100%" height="500px" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination-container">
+        <div class="pagination" id="pagination">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+    </div>
+</section>
+
+<section class="separacion__final separacion__fondo">
+    <div class="seccion__texto-4">
+    <div class="texto-container">
+    <h1 class="texto-5">Inicia la prueba los primeros 30 días.</h1>
+    <p  class="texto-6">Ingresa tu correo electrónico para crear o reiniciar la membresía.</p>
+    </div>
+    <div class="input-container">
+        <input type="text" class="nombre" name="nombre" required placeholder="Digita tu correo">
+        <button class="btn-empezar">Empezar ahora</button>
+    </div>
+    </div>
+
+</section>
+
+
+<section>
+    <div id="separacion-container"></div>
+    <div id="footer-container"></div>
+  
+    <script>
+      Promise.all([
+        fetch('/Principal/separacion.html').then(response => response.text()),
+        fetch('/Principal/footer.html').then(response => response.text())
+      ])
+      .then(([separacionData, footerData]) => {
+        document.getElementById('footer-container').innerHTML = footerData;
+      })
+      .catch(error => console.error('Error al cargar los archivos:', error));
+    </script>
+ </section> 
+
+</body>
+</html>
